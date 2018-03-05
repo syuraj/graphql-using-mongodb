@@ -1,0 +1,15 @@
+type Profile {
+    _id: String!
+    name: String!,
+    title: String!
+}
+type Notification {
+    _id: String!
+    name: String!
+}
+type Query {
+    getProfile(name: String): Profile!
+}
+type Mutation {
+    createProfile(name: String): Profile!
+}
